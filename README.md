@@ -115,6 +115,6 @@ Index
 * ROSAT_D (ROSAT All-Sky Survey match, are otherwise bright enough for SDSS spectroscopy)
 
 # 출처 
-[SDSS_type]](https://skyserver.sdss.org/dr12/en/help/docs/QS_UserGuide.aspx)
-[SDSS_ugriz_bands]http://skyserver.sdss.org/dr1/en/proj/advanced/color/sdssfilters.asp
-[SDSS_용어사전?](http://www.sdss3.org/dr10/help/glossary.php)
+[SDSS_type](https://skyserver.sdss.org/dr12/en/help/docs/QS_UserGuide.aspx)  
+[SDSS_ugriz_bands](http://skyserver.sdss.org/dr1/en/proj/advanced/color/sdssfilters.asp)  
+[SDSS_용어사전?](http://www.sdss3.org/dr10/help/glossary.php)  
