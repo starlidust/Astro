@@ -116,5 +116,5 @@ Index
 
 # 출처 
 [SDSS_type]](https://skyserver.sdss.org/dr12/en/help/docs/QS_UserGuide.aspx)
-[SDSS_ugriz_bands]http://skyserver.sdss.org/dr1/en/proj/advanced/color/sdssfilters.asp
+[SDSS_ugriz_bands](http://skyserver.sdss.org/dr1/en/proj/advanced/color/sdssfilters.asp)
 [SDSS_용어사전?](http://www.sdss3.org/dr10/help/glossary.php)
