@@ -1,7 +1,8 @@
 Index  
 1. [대회안내](#대회안내)
 2. [진행과정](#진행과정)
-3. [후기](#후기)
+3. [배경지식](#배경지식)
+4. [후기](#후기)
 
 # 대회안내
 [출처-Dacon](https://dacon.io/competitions/official/235573/overview/description/)
@@ -67,4 +68,53 @@ Index
         keras로 작성하는게 더 용이해서 keras로 Sequential model구축하고 baseline과 동일한 layer 유지
     - RF 결과 : 0.5469542991
         n_estimators = 100의 기본모델
-        
+# 배경지식
+* QSO(quasi-stellar object) [퀘이사](https://ko.wikipedia.org/wiki/%ED%80%98%EC%9D%B4%EC%82%AC)
+    - 퀘이사는 지구에서 관측할수 있는 가장 먼 거리에 있는 천제로 강한 에너지를 방출하는 황동은하이다. 
+    - 퀘이사는 지금까지 우주에서 발견될 천체들 중 가장 밝고 강력하여 활동적인 천체이다. 
+* galaxy [은하](https://ko.wikipedia.org/wiki/%EC%9D%80%ED%95%98)
+    -  항성, 밀집성, 성간 물질, 암흑 물질 등이 중력에 의해 묶여져서 이루는 거대한 천체들의 무리
+
+* SPECTROPHOTO_STD (spectrophotometry standard (typically an F-star)) [F형_주계열성](https://ko.wikipedia.org/wiki/F%ED%98%95_%EC%A3%BC%EA%B3%84%EC%97%B4%EC%84%B1)
+    - 주계열성 중 분광형 F에 속하는 항성이다. 질량은 태양의 1 ~ 1.4배에 표면 온도는 6000 ~ 7600 켈빈이다
+    - 주계열성을 왜성(矮星)으로 달리 부르기도 하는데, 이에 따라 F형 주계열성을 황백색 왜성으로 부르기도 한다
+* REDDEN_STD (reddening standard star)
+    - 적색왜성이 되기전단계로 추정 (reddening : 적색화)
+* STAR_RED_DWARF [적색왜성](https://ko.wikipedia.org/wiki/%EC%A0%81%EC%83%89%EC%99%9C%EC%84%B1)
+    - 우주에 있는 별들의 약 90퍼센트 정도가 적색왜성인 것으로 알려져 있다
+    - 낮은 광도때문에 개개의 적색왜성을 관측하기 쉽지않다. 실제로 지구에서 육안으로 관찰할 수 있는 적색왜성은 없다.
+
+* STAR_BHB(blue horizontal-branch stars) [수평거성열](https://ko.wikipedia.org/wiki/%EC%88%98%ED%8F%89%EA%B1%B0%EC%84%B1%EC%97%B4)
+
+* STAR_CATY_VAR (cataclysmic variables) [격변변광성](https://ko.wikipedia.org/wiki/%EA%B2%A9%EB%B3%80%EB%B3%80%EA%B4%91%EC%84%B1)
+    - 밝기가 큰 폭으로 급작스럽게 밝아졌다가 순식간에 뚝 떨어지는 항성
+
+* STAR_CARBON (dwarf and giant carbon stars) [탄소별(영문)](https://en.wikipedia.org/wiki/Carbon_star)
+    - 적색거성에 속하는 별 
+* STAR_WHITE_DWARF [백색왜성](https://ko.wikipedia.org/wiki/%EB%B0%B1%EC%83%89%EC%99%9C%EC%84%B1)
+    -  중간 이하의 질량을 지닌 항성이 핵융합을 마치고 도달하는 천체
+    -  에너지를 생성할 수 없기 때문에 점차 식어가게 되며, 또한 핵이 중력에 의해 붕괴하는 것을 막지 못하고, 결국 매우 밀도가 높은 상태가 된다
+* STAR_SUB_DWARF (low-luminosity subdwarfs) [준왜성](https://ko.wikipedia.org/wiki/%EC%A4%80%EC%99%9C%EC%84%B1)
+    - 이들은 같은 표면온도의 주계열성에 비해 밝기가 1.5에서 2등급 정도 낮다
+
+* STAR_BROWN_DWARF [갈색왜성](https://ko.wikipedia.org/wiki/%EA%B0%88%EC%83%89%EC%99%9C%EC%84%B1)
+    - 제일 무거운 가스행성과 가장 가벼운 항성 사이 질량 범위에 존재하는 준항성천체이다
+* SKY (sky target) 
+    - 빈영역? 다크메터(암흑물질)로 이뤄진 공간을 말하는듯?
+
+* STAR_PN (central stars of planetary nebulae) 
+    - 행성상성운의 중심에 있는 별 [행성상성운](https://ko.wikipedia.org/wiki/%ED%96%89%EC%84%B1%EC%83%81%EC%84%B1%EC%9A%B4)
+        - 행성상성운의 수명은 수만 년 정도로, 별의 수명이 수십억 년 정도인 바, 우주적 규모에서는 상대적으로 짧게 지속되는 현상
+        - 발광성운의 일종으로, 늙은 적색거성의 외피층이 팽창하여 형성된 전리 기체들로 이루어져 있다
+* SERENDIPITY_FIRST (coincident with FIRST sources but fainter than the equivalent in quasar target selection (also includes non-PSF sources))
+* SERENDIPITY_MANUAL (manual serendipity flag)
+* SERENDIPITY_BLUE (lying outside the stellar locus in color space)
+* SERENDIPITY_RED (lying outside the stellar locus in color space)
+* SERNDIPITY_DISTANT (lying outside the stellar locus in color space)
+
+* ROSAT_D (ROSAT All-Sky Survey match, are otherwise bright enough for SDSS spectroscopy)
+
+# 출처 
+[SDSS_type]](https://skyserver.sdss.org/dr12/en/help/docs/QS_UserGuide.aspx)
+[SDSS_ugriz_bands]http://skyserver.sdss.org/dr1/en/proj/advanced/color/sdssfilters.asp
+[SDSS_용어사전?](http://www.sdss3.org/dr10/help/glossary.php)
