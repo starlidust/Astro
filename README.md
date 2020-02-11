@@ -70,10 +70,13 @@ Index
         n_estimators = 100의 기본모델
 # 배경지식
 * QSO(quasi-stellar object) [퀘이사](https://ko.wikipedia.org/wiki/%ED%80%98%EC%9D%B4%EC%82%AC)
+    - 스펙트럼은 0.05 ~ 7의 적색편이를 갖음
+    - 퀘이사의 질량은 10^6 ~ 10^9 M
     - 퀘이사는 지구에서 관측할수 있는 가장 먼 거리에 있는 천제로 강한 에너지를 방출하는 활동은하. 
     - 퀘이사는 지금까지 우주에서 발견될 천체들 중 가장 밝고 강력하여 활동적인 천체이다. 
     - 우주의 팽창 때문에 매우 큰 적색편이 값을 갖는다.
 * galaxy [은하](https://ko.wikipedia.org/wiki/%EC%9D%80%ED%95%98)
+    - 은하들은 작은 것들은 1천만(107) 개 이하의 항성으로 이루어져 있고,큰 것들은 100조(1014)여 개의 항성들을 가지고 있음
     -  항성, 밀집성, 성간 물질, 암흑 물질 등이 중력에 의해 묶여져서 이루는 거대한 천체들의 무리
 
 * SPECTROPHOTO_STD (spectrophotometry standard (typically an F-star)) [F형_주계열성](https://ko.wikipedia.org/wiki/F%ED%98%95_%EC%A3%BC%EA%B3%84%EC%97%B4%EC%84%B1)
@@ -83,9 +86,13 @@ Index
     - 적색왜성이 되기전단계로 추정 (reddening : 적색화)
 * STAR_RED_DWARF [적색왜성](https://ko.wikipedia.org/wiki/%EC%A0%81%EC%83%89%EC%99%9C%EC%84%B1)
     - 우주에 있는 별들의 약 90퍼센트 정도가 적색왜성인 것으로 알려져 있다
+    - 태약무게의 50~70%
+    - 헬륨과 수소를 연료로 순환해서 씀, 수명이 1~10조년
     - 낮은 광도때문에 개개의 적색왜성을 관측하기 쉽지않다. 실제로 지구에서 육안으로 관찰할 수 있는 적색왜성은 없다.
 
 * STAR_BHB(blue horizontal-branch stars) [수평거성열](https://ko.wikipedia.org/wiki/%EC%88%98%ED%8F%89%EA%B1%B0%EC%84%B1%EC%97%B4)
+    - 태양의 질량의 2.3배까지의 질량을 가진 주계열성에서, 중심핵에서의 수소의 핵융합(p-p 연쇄)은 주로 별의 질량에 의해 결정되는 융합률
+    - _적색왜성이 적색거성이되는 단계로추정_
 
 * STAR_CATY_VAR (cataclysmic variables) [격변변광성](https://ko.wikipedia.org/wiki/%EA%B2%A9%EB%B3%80%EB%B3%80%EA%B4%91%EC%84%B1)
     - 밝기가 큰 폭으로 급작스럽게 밝아졌다가 순식간에 뚝 떨어지는 항성
@@ -99,7 +106,9 @@ Index
     - 이들은 같은 표면온도의 주계열성에 비해 밝기가 1.5에서 2등급 정도 낮다
 
 * STAR_BROWN_DWARF [갈색왜성](https://ko.wikipedia.org/wiki/%EA%B0%88%EC%83%89%EC%99%9C%EC%84%B1)
-    - 제일 무거운 가스행성과 가장 가벼운 항성 사이 질량 범위에 존재하는 준항성천체이다
+    - 초기질량이 태양의 7.5%배 이하(목성 질량의 80배 이하)인 별
+    - 갈색왜성은 적색왜성보다 수소가 적으며 핵융합을 지속할 수 없음
+    - 핵융합을 할수 없기에 거의 빛을 내지 못함
 * SKY (sky target) 
     - 빈영역? 다크메터(암흑물질)로 이뤄진 공간을 말하는듯?
 
