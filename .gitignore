@@ -5,3 +5,13 @@ submisson/submission_lightbgm_tune_outlier_add_only(0.3723183674).csv
 submisson/submission_lightbgm_tune_outlier_add_only(0.3662445914).csv
 submisson/submission_lightbgm_data_select_outlair_add_only(0.3806279619).csv
 submisson/submission_lightbgm_data_select_outlair_add_only(0.3731965913).csv
+0227_fiberID3.py
+best_pram.txt
+.ipynb_checkpoints/lightbgm(CV+outlier+without_fiber)_JH-checkpoint.ipynb
+.ipynb_checkpoints/lightbgm(CV+outlier+with fiberID)_JH-checkpoint.ipynb
+.ipynb_checkpoints/0227_lightbgm(CV+add_featurer+without_fiber)_JH-checkpoint.ipynb
+.ipynb_checkpoints/0227_lgbm_clasifier(add_featues)_JH-Copy1-checkpoint.ipynb
+.ipynb_checkpoints/0227_EDA-make_feature-checkpoint.ipynb
+.ipynb_checkpoints/0225_lgbm_PCA_JH-checkpoint.ipynb
+.ipynb_checkpoints/0225_lgbm_PCA(without_fiberID)-Copy1-checkpoint.ipynb
+.ipynb_checkpoints/0224_lgbm_clasifier(with_fiberID)_JH-checkpoint.ipynb
