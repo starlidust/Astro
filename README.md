@@ -63,15 +63,45 @@ Index
 
 # 진행과정
 1. EDA  
+* 기본특성   
 변수의 개수 : fiberID는 총 1000개, type은 총 21개   
 변수의 특성 : Magnitute의 모든 값들은 19~21 사이의 범위에 해당함  
 변수간 상관관계 : psfMag_u, fiberMag_u, petroMag_u간의 상관관계 확인   
-![상관관계](./image/0.corr)
+![상관관계](./image/0.corr.png)
 
-type에 따른 개수 : QSO, GALAXY가 가장 많았으며, STAR_PN, SERENDIPITY_MANUAL 각각 61개 13개로 가장 적어 예측이 다소 어려울 것으로 추정 
-fiberID에 따른 개수 : fiberID에 따른 데이터 분포는 균등하지 않으며, 표본이 10개 이하인 fiberID도 존재함, 또한 641번 fiberID 이후 모든 데이터는 QSO에 집중분포됨
+* type에 따른 개수 : QSO, GALAXY가 가장 많았으며, STAR_PN, SERENDIPITY_MANUAL 각각 61개 13개로 가장 적어 예측이 다소 어려울 것으로 추정 
 
+![type_count](./image/type_count.png)  
+* fiberID에 따른 개수 : fiberID에 따른 데이터 분포는 균등하지 않으며, 표본이 10개 이하인 fiberID도 존재함, 또한 641번 fiberID 이후 모든 데이터는 QSO에 집중분포됨
+
+![상관관계2](./image/1.corr_fiber.png)
+
+* type에 따른 magnitue  
+각 타입에 따른 features 확인 type별로 다소 다른 분포를 보이는 것을 확인가능 
+![type_mag](./image/type_mag.png)
 2. feature engineering
+* ugriz band 변수간 차이 
+color-color map을 참고하여 ugriz band간의 차이를 추가변수로 추가 
+ex) u-g, g-r, r-i, i-z
+* mag별 가능한 모든 차이 조합
+ex) psfmag : u-g, u-r, u-i, u-z ... etc
+* ~~mag별 가장 높은 값의 filter를 새로운 변수로 추가~~
+    - category변수 추가를 지양하기로 하여 배제
+* ~~가능한 모든 조합의 차~~
+ex) psfmag_u - fibermag_u 
+    -  변수량의 큰 증가 및 psfmag_u - fibermag_u와 같은 u band간에서 큰 상관관계 발생하여 배제
+* ~~PCA를 활용하여 ugriz_band별 통합~~
+ex) psfmag_u, fibermag_u, petromag_u, modelmag_u -> PCA_u
+    - 각 밴드별로 강한 상관관계를 가지고 있어서 배제
+* ~~ugriz band별 통계값(평균, 표준편차, 최소, 중앙, 최대)~~
+ex) u_mean, u_std etc
+    - u 밴드에서 강한 상관관계를 가지고 있으며, 다른 밴드에서도 유사하여 배제
+* ~~fiberID에 따른 통계값 magnitude(평균, 표준편차, 최소, 중앙, 최대)~~
+ex) median_psfMag, std_fiberMag
+    - fiberID는 기초모델로 feature importance를 확인했을때 가장 영향력이 높았으므로, 이를 활용하여 추가변수 생성을 시도 그러나, 다른 magnitude와 비슷하여 기각
+* fiberID에 따른 통계값 ugriz band(평균, 표준편차, 최소, 중앙, 최대)
+    - magnitude와 다르게 median, std는 상관관계가 높지 않으므로 활용성이 높다 판단
+
 3. Modeling 
  
 
