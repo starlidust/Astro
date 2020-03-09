@@ -62,12 +62,19 @@ Index
     * fiberID : 관측에 사용된 광섬유의 구분자
 
 # 진행과정
-* 02월 3일 baseline test
-    - MLP 결과 : 0.3957622486
-        colab사용해서 처리 
-        keras로 작성하는게 더 용이해서 keras로 Sequential model구축하고 baseline과 동일한 layer 유지
-    - RF 결과 : 0.5469542991
-        n_estimators = 100의 기본모델
+1. EDA  
+변수의 개수 : fiberID는 총 1000개, type은 총 21개   
+변수의 특성 : Magnitute의 모든 값들은 19~21 사이의 범위에 해당함  
+변수간 상관관계 : psfMag_u, fiberMag_u, petroMag_u간의 상관관계 확인   
+![상관관계](./image/0.corr)
+
+type에 따른 개수 : QSO, GALAXY가 가장 많았으며, STAR_PN, SERENDIPITY_MANUAL 각각 61개 13개로 가장 적어 예측이 다소 어려울 것으로 추정 
+fiberID에 따른 개수 : fiberID에 따른 데이터 분포는 균등하지 않으며, 표본이 10개 이하인 fiberID도 존재함, 또한 641번 fiberID 이후 모든 데이터는 QSO에 집중분포됨
+
+2. feature engineering
+3. Modeling 
+ 
+
 # 배경지식
 * QSO(quasi-stellar object) [퀘이사](https://ko.wikipedia.org/wiki/%ED%80%98%EC%9D%B4%EC%82%AC)
     - 스펙트럼은 0.05 ~ 7의 적색편이를 갖음
@@ -110,19 +117,26 @@ Index
     - 갈색왜성은 적색왜성보다 수소가 적으며 핵융합을 지속할 수 없음
     - 핵융합을 할수 없기에 거의 빛을 내지 못함
 * SKY (sky target) 
-    - 빈영역? 다크메터(암흑물질)로 이뤄진 공간을 말하는듯?
+    - 빈영역? 다크메터(암흑물질)로 이뤄진 공간
 
 * STAR_PN (central stars of planetary nebulae) 
     - 행성상성운의 중심에 있는 별 [행성상성운](https://ko.wikipedia.org/wiki/%ED%96%89%EC%84%B1%EC%83%81%EC%84%B1%EC%9A%B4)
         - 행성상성운의 수명은 수만 년 정도로, 별의 수명이 수십억 년 정도인 바, 우주적 규모에서는 상대적으로 짧게 지속되는 현상
         - 발광성운의 일종으로, 늙은 적색거성의 외피층이 팽창하여 형성된 전리 기체들로 이루어져 있다
 * SERENDIPITY_FIRST (coincident with FIRST sources but fainter than the equivalent in quasar target selection (also includes non-PSF sources))
+    - 첫번째 관측에서 퀘이사로 분류되었지만, 이어진 관측에서는 더 흐릿한 천체
 * SERENDIPITY_MANUAL (manual serendipity flag)
-* SERENDIPITY_BLUE (lying outside the stellar locus in color space)
-* SERENDIPITY_RED (lying outside the stellar locus in color space)
-* SERNDIPITY_DISTANT (lying outside the stellar locus in color space)
-
+    - 수동으로 관측된 천체
 * ROSAT_D (ROSAT All-Sky Survey match, are otherwise bright enough for SDSS spectroscopy)
+    -  X-선 파장대에서 관측한 천체이지만, SDSS 망원경에서도 관측되는 천체
+* SERENDIPITY_BLUE (lying outside the stellar locus in color space)
+* SERENDIPITY_RED (lying outside the stellar locus in color space) 
+* SERNDIPITY_DISTANT (lying outside the stellar locus in color space)
+    - 항성 구역 외부에 놓인 천체
+# 후기
+
+* 정현
+    - 다소 오랜만에 배경지식이 부족한 분야를 하다보니 당황스러웠으며, 
 
 # 출처 
 [SDSS_type](https://skyserver.sdss.org/dr12/en/help/docs/QS_UserGuide.aspx)  
